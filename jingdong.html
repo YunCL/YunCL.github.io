@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='author' content='云翎暗梓'>
+  <meta name='description' content='京东评论可视化'>
+  <meta name='keywords' content='京东，评论，可视化'>
+  <meta http-equiv='refresh' content='30'>
+  <base href=''>
+</head>
+<style>
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+	margin: 0  auto;
+	font-size: 15px;
+	font-family: Microsoft Yahei;
+	background-color: rgba(160, 145, 145, 0.21);
+}
+
+#header{
+	background-image: url('bg2.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	height: 300px;
+}
+
+#header #po{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+#header #po #desc{
+	color: #fff;
+	line-height: 1.2em;
+    display: inline-block;
+    width: 580px;
+    height: 120px
+}
+
+#header #po #desc span{
+	color:#D62210;
+}
+
+#header #po #intro{
+    width: 600px; 
+    vertical-align: top;
+    display: inline-block;
+}
+
+#header #po #intro .t1{
+	color:#14BD6F;
+	font-size: 17px;
+	width: 100px;
+	display: inline-block;
+}
+
+#header #po #intro .t2{
+	color:#E24A4A;
+	font-size: 17px;
+}
+
+#content{
+    width: 1200px;
+	margin: 0 auto;
+	height: 400px;
+    padding-top: 20px;
+}
+
+#content #desc_1{
+   color: rgba(103, 152, 202, 0.87);
+   height: 200px
+}
+
+#content img{
+	width: 595px;
+    margin-right: 5px;
+}
+
+</style>
+<body>
+   <div id='header'>
+   	    <div id='po'>
+	   	  <div id='desc'>数据来自京东商品<span>森海塞尔耳机 px200</span><br>楼主很喜欢这款耳机，这里对京东该款产品下的评论进行数据分析，看看这款耳机在大众眼中的地位。<br>
+	   	  这里主要通过python包<span>urllib2</span><br>来爬取了京东评论的5000条数据，分为创建时间，商品推荐，用户评论，用户选择颜色等字段，<br>使用<span>pandas</span>对数据进行清洗，
+	   	  <span>matplotlib</span>来进行分析
+	   	  </div>
+	   	  <div id='intro'>
+	   	  	 <span class='t1'>综合评分：</span><span class='t2'>5+</span><br>
+	   	  	 <span class='t1'>好评率：</span><span class='t2'>9.8</span><br>
+	   	  	 <span class='t1'>总评论:</span><span class='t2'>1.1万</span><br>
+	   	  	 <span class='t1'>标签：</span><span class='t2'>声音动感，耳机不错，外形时尚，品质高，价格略高</span><br>
+	   	  	 <span class='t1'>推荐指数：</span><span class='t2'>8.5</span><br>
+	   	  </div>
+	    </div>
+   </div>
+
+   <div id='content'>
+   	     <div id='desc_1'>24小时评论数量，发现上午10点，至晚上为高峰评论时间<span></span><br>楼主很喜欢这款耳机，这里对京东该款产品下的评论进行数据分析，看看这款耳机在大众眼中的地位。<br>
+	   	  这里主要通过python包<span>urllib2</span><br>来爬取了京东评论的5000条数据，分为创建时间，商品推荐，用户评论，用户选择颜色等字段，<br>使用<span>pandas</span>对数据进行清洗，
+	   	  <span>matplotlib</span>来进行分析
+	   	  </div>
+   	    <img src='figure_1.png'/><img src="figure_2.png"/>
+   </div>
+
+</body>
+</html>
